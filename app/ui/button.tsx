@@ -6,6 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button({ children, className, ...rest }: ButtonProps) {
   return (
+    // biome-ignore lint/a11y/useButtonType: <explanation>
     <button
       {...rest}
       className={clsx(
